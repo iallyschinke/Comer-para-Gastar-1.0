@@ -1110,56 +1110,6 @@ body {
   }
 }
 
-@media (max-width: 600px) {
-  .novo-hero {
-    padding: 50px 22px 60px;
-  }
-
-  .novo-hero h1 {
-    font-size: 54px;
-  }
-
-  .novo-hero p {
-    font-size: 19px;
-  }
-
-  .novo-hero .hero-botoes {
-    flex-direction: column;
-  }
-
-  .novo-hero .btn-principal,
-  .novo-hero .btn-secundario {
-    width: 100%;
-    text-align: center;
-  }
-
-  .hero-visual {
-    height: 330px;
-    border-radius: 24px;
-  }
-
-  .card-flutuante {
-    left: 18px;
-    right: 18px;
-    bottom: 18px;
-    padding: 18px;
-    gap: 15px;
-  }
-
-  .card-flutuante img {
-    width: 52px;
-    height: 52px;
-  }
-
-  .card-flutuante h3 {
-    font-size: 17px;
-  }
-
-  .card-flutuante p {
-    font-size: 14px;
-  }
-}
-
 @media (max-width: 520px) {
   .header {
     top: 10px;
@@ -1294,16 +1244,6 @@ body {
   transform: translateY(-6px);
 
   box-shadow: 0 18px 40px rgba(56, 128, 52, 0.12);
-}
-
-.motivacao-card img {
-  width: 120px;
-
-  height: auto;
-
-  object-fit: contain;
-
-  margin-bottom: 18px;
 }
 
 .motivacao-card h3 {
@@ -1550,10 +1490,6 @@ body {
 /* AJUSTES FINAIS MOBILE / TABLET */
 /* =============================== */
 
-body {
-  overflow-x: hidden;
-}
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -1614,266 +1550,6 @@ video {
 }
 
 /* CELULAR */
-
-@media (max-width: 600px) {
-  body {
-    padding-top: 205px;
-  }
-
-  .header {
-    top: 10px;
-    width: 94%;
-    padding: 14px;
-    border-radius: 24px;
-  }
-
-  .logo img {
-    width: 115px;
-  }
-
-  .menu {
-    width: 100%;
-    gap: 10px 14px;
-    justify-content: center;
-  }
-
-  .menu a {
-    font-size: 13px;
-  }
-
-  .acoes-header {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .btn-header {
-    padding: 10px 16px;
-    font-size: 13px;
-    border-radius: 12px;
-  }
-
-  .novo-hero {
-    padding: 45px 20px 55px;
-    gap: 35px;
-  }
-
-  .novo-hero .tag {
-    margin-bottom: 28px;
-    font-size: 14px;
-    padding: 8px 16px;
-  }
-
-  .novo-hero h1 {
-    font-size: clamp(46px, 14vw, 58px);
-  }
-
-  .novo-hero p {
-    font-size: 18px;
-    line-height: 1.45;
-    margin-bottom: 30px;
-  }
-
-  .linha-verde {
-    width: 230px;
-  }
-
-  .novo-hero .btn-principal,
-  .novo-hero .btn-secundario {
-    padding: 16px 24px;
-    font-size: 16px;
-  }
-
-  .hero-visual {
-    height: 310px;
-  }
-
-  .card-flutuante {
-    left: 14px;
-    right: 14px;
-    bottom: 14px;
-    min-height: auto;
-    padding: 14px;
-  }
-
-  .card-flutuante img {
-    width: 48px;
-    height: 48px;
-  }
-
-  .card-flutuante h3 {
-    font-size: 16px;
-  }
-
-  .card-flutuante p {
-    font-size: 13px;
-  }
-
-  .sobre,
-  .dicas,
-  .equilibrio-alertas,
-  .calculadora-preview,
-  .motivacao-cards,
-  .contato {
-    padding: 65px 20px;
-  }
-
-  .sobre-texto h1,
-  .titulo-secao h1,
-  .calculadora-texto h1,
-  .contato-formulario h1 {
-    font-size: 38px;
-  }
-
-  .sobre-texto p,
-  .calculadora-texto p,
-  .contato-formulario p {
-    font-size: 17px;
-  }
-
-  .sobre-card {
-    padding: 28px 22px;
-  }
-
-  .sobre-card h2 {
-    font-size: 30px;
-  }
-
-  .sobre-card p {
-    font-size: 17px;
-  }
-
-  .sobre-itens {
-    grid-template-columns: 1fr;
-  }
-
-  .cards-dicas {
-    gap: 25px;
-  }
-
-  .card-dica {
-    width: 100%;
-    min-height: auto;
-    padding: 28px 22px;
-  }
-
-  .card-dica h2 {
-    font-size: 25px;
-  }
-
-  .card-dica p {
-    font-size: 16px;
-  }
-
-  .imagem-dica {
-    width: 190px;
-    height: 190px;
-  }
-
-  .alertas-cards {
-    gap: 25px;
-  }
-
-  .alerta-card {
-    width: 100%;
-    min-height: auto;
-    padding: 26px 20px 32px;
-  }
-
-  .animacao-frame {
-    width: 240px;
-    height: 230px;
-  }
-
-  .alerta-card h2 {
-    font-size: 1.4rem;
-  }
-
-  .alerta-card p {
-    font-size: 0.98rem;
-  }
-
-  .placeholder-imagem {
-    height: 220px;
-    padding: 14px;
-  }
-
-  .motivacao-card {
-    width: 100%;
-    padding: 26px 20px;
-  }
-
-  .motivacao-card img {
-    width: 190px;
-  }
-
-  .motivacao-card h3 {
-    font-size: 1.55rem;
-  }
-
-  .motivacao-card p {
-    font-size: 1rem;
-  }
-
-  .contato-formulario {
-    padding: 28px 20px;
-  }
-
-  .campo {
-    gap: 10px;
-  }
-
-  .icone-campo {
-    width: 48px;
-    height: 48px;
-    min-width: 48px;
-  }
-
-  .campo input,
-  .campo textarea {
-    font-size: 15px;
-    padding: 15px;
-  }
-
-  .contato-imagem {
-    height: 300px;
-  }
-
-  .contato-imagem img {
-    width: 320px;
-  }
-
-  .lista-canais {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-final {
-    padding: 38px 22px;
-  }
-
-  .footer-menu {
-    gap: 18px;
-  }
-
-  .footer-menu a {
-    font-size: 1rem;
-  }
-
-  .footer-copy {
-    font-size: 0.9rem;
-  }
-
-  .whatsapp-fixo {
-    width: 58px;
-    height: 58px;
-    right: 16px;
-    bottom: 16px;
-  }
-
-  .whatsapp-fixo img {
-    width: 31px;
-    height: 31px;
-  }
-}
 
 /* ANIMAÇÕES AO ROLAR */
 
@@ -1948,16 +1624,19 @@ video {
 
 /* EVITA BARRA DE ROLAGEM LATERAL */
 
-body {
-  overflow-x: hidden;
-}
-
 @media (max-width: 600px) {
   html,
   body {
     width: 100%;
     max-width: 100%;
     overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+    display: none;
   }
 
   body {
@@ -2000,12 +1679,13 @@ body {
   }
 
   .novo-hero {
-    min-height: calc(100vh - 125px);
-    padding: 18px 18px 25px;
+    min-height: auto;
+    padding: 20px 18px 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    gap: 24px;
   }
 
   .novo-hero .hero-conteudo {
@@ -2017,6 +1697,12 @@ body {
     margin-bottom: 18px;
     font-size: 13px;
     padding: 7px 14px;
+    gap: 10px;
+  }
+
+  .novo-hero .tag img {
+    width: 32px;
+    height: 32px;
   }
 
   .novo-hero h1 {
@@ -2038,6 +1724,7 @@ body {
   }
 
   .hero-botoes {
+    width: 100%;
     flex-direction: column;
     gap: 12px;
   }
@@ -2050,21 +1737,160 @@ body {
   }
 
   .hero-visual {
+    display: block;
+    width: 100%;
+    height: 220px;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  .hero-comida {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .card-flutuante {
     display: none;
+  }
+
+  .sobre,
+  .dicas,
+  .equilibrio-alertas,
+  .calculadora-preview,
+  .motivacao-cards,
+  .contato {
+    padding: 60px 18px;
+  }
+
+  .sobre,
+  .calculadora-preview,
+  .contato-container {
+    flex-direction: column;
+    gap: 35px;
+    text-align: center;
+  }
+
+  .sobre-texto,
+  .sobre-card,
+  .calculadora-texto,
+  .calculadora-card,
+  .contato-formulario,
+  .contato-imagem,
+  .alerta-card,
+  .motivacao-card,
+  .card-dica {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sobre-texto h1,
+  .titulo-secao h1,
+  .calculadora-texto h1,
+  .contato-formulario h1 {
+    font-size: 38px;
+  }
+
+  .sobre-texto p,
+  .calculadora-texto p,
+  .contato-formulario p,
+  .card-dica p,
+  .alerta-card p {
+    font-size: 16px;
+  }
+
+  .sobre-card,
+  .calculadora-card,
+  .contato-formulario,
+  .alerta-card,
+  .card-dica,
+  .motivacao-card {
+    padding: 24px 18px;
+  }
+
+  .sobre-itens,
+  .lista-canais {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-dicas,
+  .alertas-cards {
+    gap: 22px;
+  }
+
+  .imagem-dica {
+    width: 180px;
+    height: 180px;
+  }
+
+  .animacao-frame {
+    width: 220px;
+    height: 210px;
+  }
+
+  .placeholder-imagem {
+    height: 210px;
+    padding: 12px;
+  }
+
+  .motivacao-card img {
+    width: 170px;
+  }
+
+  .contato-imagem {
+    height: 260px;
+  }
+
+  .contato-imagem img {
+    width: 280px;
+  }
+
+  .footer-final {
+    padding: 35px 18px;
+  }
+
+  .footer-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .footer-menu a {
+    font-size: 0.95rem;
+  }
+
+  .footer-copy {
+    font-size: 0.85rem;
+  }
+
+  .whatsapp-fixo {
+    width: 56px;
+    height: 56px;
+    right: 14px;
+    bottom: 14px;
+  }
+
+  .whatsapp-fixo img {
+    width: 28px;
+    height: 28px;
   }
 }
 
-@media (max-width: 600px) {
-  ::-webkit-scrollbar {
-    width: 0;
-    display: none;
-  }
+.icone-folha {
+  width: 32px !important;
+  height: 32px !important;
 
-  html {
-    scrollbar-width: none;
-  }
+  min-width: 32px;
 
-  body {
-    -ms-overflow-style: none;
-  }
+  object-fit: contain;
+
+  display: block;
 }
