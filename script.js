@@ -172,7 +172,7 @@ const framesGordao = [
   "imagens/gordao-frame-4.png",
 ];
 
-const temposGordao = [700, 700, 700, 1500];
+const temposGordao = [1000, 1000, 1000, 2000];
 
 let frameGordaoAtual = 0;
 
@@ -203,7 +203,7 @@ const framesLasca = [
   "imagens/lasca-frame-4.png",
 ];
 
-const temposLasca = [700, 700, 700, 1500];
+const temposLasca = [1000, 1000, 1000, 2000];
 
 let frameLascaAtual = 0;
 
@@ -224,7 +224,3 @@ function animarLasca() {
 }
 
 animarLasca();
-
-// =========================
-// MENU MOBILE
-// =========================

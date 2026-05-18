@@ -1001,21 +1001,6 @@ body {
   }
 }
 
-/* SCROLLBAR */
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background: #eef0e8;
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--verde-claro);
-  border-radius: 999px;
-}
-
 /* RESPONSIVO */
 
 @media (max-width: 1050px) {
@@ -1565,10 +1550,21 @@ body {
 /* AJUSTES FINAIS MOBILE / TABLET */
 /* =============================== */
 
-html,
 body {
-  max-width: 100%;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #eef0e8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--verde-claro);
+  border-radius: 999px;
 }
 
 img,
@@ -1876,5 +1872,199 @@ video {
   .whatsapp-fixo img {
     width: 31px;
     height: 31px;
+  }
+}
+
+/* ANIMAÇÕES AO ROLAR */
+
+.reveal-up,
+.reveal-left,
+.reveal-right,
+.reveal-zoom,
+.reveal-card {
+  opacity: 0;
+  transition:
+    opacity 0.9s ease,
+    transform 0.9s ease;
+  will-change: opacity, transform;
+}
+
+/* VEM DE BAIXO */
+.reveal-up {
+  transform: translateY(70px);
+}
+
+/* VEM DA ESQUERDA */
+.reveal-left {
+  transform: translateX(-70px);
+}
+
+/* VEM DA DIREITA */
+.reveal-right {
+  transform: translateX(70px);
+}
+
+/* ZOOM SUAVE */
+.reveal-zoom {
+  transform: scale(0.88);
+}
+
+/* CARD APARECENDO */
+.reveal-card {
+  transform: translateY(60px) scale(0.94);
+}
+
+/* QUANDO APARECE NA TELA */
+.reveal-up.active,
+.reveal-left.active,
+.reveal-right.active,
+.reveal-zoom.active,
+.reveal-card.active {
+  opacity: 1;
+  transform: translate(0, 0) scale(1);
+}
+
+/* ATRASOS PARA APARECER UM DEPOIS DO OUTRO */
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
+
+/* EVITA BARRA DE ROLAGEM LATERAL */
+
+body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-top: 125px;
+  }
+
+  .header {
+    top: 8px;
+    width: calc(100% - 20px);
+    padding: 10px 12px;
+    border-radius: 22px;
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .menu {
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .menu a {
+    font-size: 12px;
+  }
+
+  .acoes-header {
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .btn-header {
+    padding: 9px 14px;
+    font-size: 12px;
+    border-radius: 12px;
+  }
+
+  .novo-hero {
+    min-height: calc(100vh - 125px);
+    padding: 18px 18px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .novo-hero .hero-conteudo {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .novo-hero .tag {
+    margin-bottom: 18px;
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+
+  .novo-hero h1 {
+    font-size: 42px;
+    line-height: 0.95;
+    margin-bottom: 16px;
+  }
+
+  .linha-verde {
+    width: 190px;
+    height: 4px;
+    margin: 0 auto 18px;
+  }
+
+  .novo-hero p {
+    font-size: 15px;
+    line-height: 1.45;
+    margin-bottom: 22px;
+  }
+
+  .hero-botoes {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .novo-hero .btn-principal,
+  .novo-hero .btn-secundario {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+
+  .hero-visual {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  ::-webkit-scrollbar {
+    width: 0;
+    display: none;
+  }
+
+  html {
+    scrollbar-width: none;
+  }
+
+  body {
+    -ms-overflow-style: none;
   }
 }
