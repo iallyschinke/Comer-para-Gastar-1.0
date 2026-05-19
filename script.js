@@ -224,3 +224,27 @@ function animarLasca() {
 }
 
 animarLasca();
+
+const btnMenuMobile = document.querySelector(".btn-menu-mobile");
+const headerSite = document.querySelector(".header");
+const linksMenuMobile = document.querySelectorAll(".menu a");
+
+btnMenuMobile.addEventListener("click", () => {
+  headerSite.classList.toggle("menu-aberto");
+
+  if (headerSite.classList.contains("menu-aberto")) {
+    btnMenuMobile.innerHTML = "×";
+    btnMenuMobile.setAttribute("aria-label", "Fechar menu");
+  } else {
+    btnMenuMobile.innerHTML = "☰";
+    btnMenuMobile.setAttribute("aria-label", "Abrir menu");
+  }
+});
+
+linksMenuMobile.forEach((link) => {
+  link.addEventListener("click", () => {
+    headerSite.classList.remove("menu-aberto");
+    btnMenuMobile.innerHTML = "☰";
+    btnMenuMobile.setAttribute("aria-label", "Abrir menu");
+  });
+});

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cadastro | Comer para Gastar</title>
+
+    <link rel="icon" type="image/png" href="imagens/aba-leaf-monstera.png" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="cadastro.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="imagens/logo oficial.png" alt="Logo Comer para Gastar" />
+      </div>
+
+      <button class="btn-menu-mobile" aria-label="Abrir menu">☰</button>
+
+      <div class="menu-mobile-area">
+        <nav class="menu">
+          <a href="index.html#inicio"><strong>Início</strong></a>
+          <a href="index.html#dicas"><strong>Dicas & conteúdos</strong></a>
+          <a href="index.html#sobre"><strong>Sobre nós</strong></a>
+          <a href="index.html#contato"><strong>Contato</strong></a>
+        </nav>
+
+        <div class="acoes-header">
+          <a href="cadastro.html" class="btn-header btn-cadastro">
+            Cadastre-se
+          </a>
+
+          <a href="login.html" class="btn-header btn-entrar"> Entrar </a>
+        </div>
+      </div>
+    </header>
+
+    <main class="cadastro-container">
+      <section class="cadastro-card">
+        <div class="formulario-area scroll-reveal">
+          <h1><strong>Crie sua conta</strong></h1>
+
+          <p>
+            <span class="texto-verde"
+              >Comece sua jornada para equilibrar a
+              <strong>alimentação</strong> e gasto
+              <strong>calórico</strong>.</span
+            >
+          </p>
+
+          <form class="form-cadastro">
+            <div class="campo">
+              <span class="icone">
+                <img src="imagens/pessoa-cadastro.png" alt="Usuário" />
+              </span>
+
+              <input type="text" placeholder="Nome completo" required />
+            </div>
+
+            <div class="campo">
+              <span class="icone">
+                <img src="imagens/email.png" alt="E-mail" />
+              </span>
+
+              <input type="email" placeholder="E-mail" required />
+            </div>
+
+            <div class="campo">
+              <span class="icone">
+                <img src="imagens/senha-cadastro.png" alt="Senha" />
+              </span>
+
+              <input type="password" placeholder="Senha" required />
+            </div>
+
+            <div class="campo">
+              <span class="icone">
+                <img src="imagens/senha-cadastro.png" alt="Confirmar senha" />
+              </span>
+
+              <input type="password" placeholder="Confirmar senha" required />
+            </div>
+
+            <button type="submit" class="btn-principal">Cadastrar</button>
+
+            <div class="separador">
+              <span></span>
+
+              <p>ou cadastre-se com</p>
+
+              <span></span>
+            </div>
+
+            <button type="button" class="btn-google">
+              <span class="icone">
+                <img src="imagens/google-cadastro.png" alt="Logo Google" />
+              </span>
+
+              Continuar com Google
+            </button>
+
+            <p class="login-texto">
+              Já tem uma conta?
+
+              <a href="login.html">Entrar</a>
+            </p>
+          </form>
+        </div>
+
+        <div class="imagem-area scroll-reveal delay-1">
+          <img
+            src="imagens/cara-computador-cadastro.png"
+            alt="Personagem usando computador"
+            class="imagem-cadastro"
+          />
+
+          <div class="decoracao">
+            <img src="imagens/maca.png" alt="Maçã" />
+
+            <img src="imagens/salada.png" alt="Salada saudável" />
+
+            <img src="imagens/halter.png" alt="Halter" />
+          </div>
+        </div>
+      </section>
+
+      <section class="beneficios">
+        <div class="beneficio scroll-reveal delay-1">
+          <span class="icone-beneficio">
+            <img src="imagens/objetivo-cadastro.png" alt="Objetivos" />
+          </span>
+
+          <div>
+            <h3>Objetivos reais</h3>
+
+            <p>Defina suas metas e acompanhe sua evolução diária.</p>
+          </div>
+        </div>
+
+        <div class="beneficio scroll-reveal delay-2">
+          <span class="icone-beneficio">
+            <img src="imagens/alimentacao-cadastro.png" alt="Alimentação" />
+          </span>
+
+          <div>
+            <h3>Alimentação inteligente</h3>
+
+            <p>Planeje refeições saudáveis e equilibradas.</p>
+          </div>
+        </div>
+
+        <div class="beneficio scroll-reveal delay-3">
+          <span class="icone-beneficio">
+            <img src="imagens/calorias-cadastro.png" alt="Exercícios" />
+          </span>
+
+          <div>
+            <h3>Gaste calorias</h3>
+
+            <p>Descubra atividades para queimar calorias.</p>
+          </div>
+        </div>
+
+        <div class="beneficio scroll-reveal delay-4">
+          <span class="icone-beneficio">
+            <img src="imagens/resultado-cadastro.png" alt="Resultados" />
+          </span>
+
+          <div>
+            <h3>Acompanhe tudo</h3>
+
+            <p>Veja seus resultados de forma simples.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="cadastro.js"></script>
+  </body>
+</html>

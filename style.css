@@ -581,24 +581,23 @@ body {
 }
 
 .placeholder-imagem {
-  height: 360px;
+  min-height: 360px;
+  height: auto;
   background: #1d5b2a;
   border-radius: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  overflow: visible;
   padding: 20px;
-  box-shadow:
-    inset 0 0 25px rgba(255, 255, 255, 0.05),
-    0 15px 35px rgba(0, 0, 0, 0.12);
 }
 
 .placeholder-imagem img {
-  width: 95%;
+  width: 100%;
   max-width: 720px;
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
 /* CONTATO */
@@ -1831,7 +1830,8 @@ video {
   }
 
   .placeholder-imagem {
-    height: 210px;
+    min-height: auto;
+    height: auto;
     padding: 12px;
   }
 
@@ -1893,4 +1893,112 @@ video {
   object-fit: contain;
 
   display: block;
+}
+
+/* MENU MOBILE + HEADER DESKTOP CORRIGIDO */
+
+.btn-menu-mobile {
+  display: none;
+}
+
+/* DESKTOP */
+@media (min-width: 601px) {
+  .header {
+    position: fixed;
+  }
+
+  .menu-mobile-area {
+    display: contents;
+  }
+
+  .menu {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+  }
+
+  .acoes-header {
+    margin-left: auto;
+    justify-content: flex-end;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  body {
+    padding-top: 95px;
+  }
+
+  .header {
+    top: 8px;
+    width: calc(100% - 20px);
+    padding: 10px 12px;
+    border-radius: 22px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    overflow: visible;
+    gap: 8px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  .btn-menu-mobile {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 12px;
+    background: var(--verde-claro);
+    color: white;
+    font-size: 26px;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .menu-mobile-area {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 14px;
+    padding-top: 14px;
+  }
+
+  .header.menu-aberto .menu-mobile-area {
+    display: flex;
+  }
+
+  .menu {
+    position: static;
+    transform: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .menu a {
+    font-size: 14px;
+  }
+
+  .acoes-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .acoes-header .btn-header {
+    flex: 1;
+    max-width: 135px;
+    padding: 10px 12px;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 12px;
+  }
 }
