@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="/imagens/aba-leaf-monstera.png"
+    />
+
+    <title>Painel | Comer para Gastar</title>
+
+    <link rel="icon" type="image/png" href="imagens/favicon.png" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-topo">
+        <div class="logo-dashboard">
+          <img src="imagens/logo oficial.png" alt="Comer para Gastar" />
+        </div>
+
+        <button class="btn-fechar-menu" aria-label="Fechar menu">×</button>
+      </div>
+
+      <nav class="menu-dashboard">
+        <a href="dashboard.html" class="ativo">
+          <span class="icone-menu">
+            <img src="imagens/casa-dash.png" alt="Início" />
+          </span>
+          Início
+        </a>
+
+        <a href="#">
+          <span class="icone-menu">
+            <img src="imagens/progresso-dash.png" alt="Meu progresso" />
+          </span>
+          Meu progresso
+        </a>
+
+        <a href="#">
+          <span class="icone-menu">
+            <img src="imagens/garfo-e-faca-dash.png" alt="Alimentação" />
+          </span>
+          Alimentação
+        </a>
+
+        <a href="#">
+          <span class="icone-menu">
+            <img src="imagens/corrida-dash.png" alt="Exercícios" />
+          </span>
+          Exercícios
+        </a>
+
+        <a href="#">
+          <span class="icone-menu">
+            <img src="imagens/alvo-dash.png" alt="Metas" />
+          </span>
+          Metas
+        </a>
+
+        <a href="index.html#dicas">
+          <span class="icone-menu">
+            <img src="imagens/dicas-dash.png" alt="Dicas" />
+          </span>
+          Dicas & conteúdos
+        </a>
+
+        <a href="#">
+          <span class="icone-menu">
+            <img src="imagens/configuracao-dash.png" alt="Configurações" />
+          </span>
+          Configurações
+        </a>
+      </nav>
+
+      <div class="sidebar-card">
+        <span class="icone-card">
+          <img src="imagens/folha.png" alt="Folha" />
+        </span>
+
+        <h3>Equilíbrio é constância.</h3>
+        <p>Pequenas escolhas, grandes resultados!</p>
+      </div>
+
+      <a href="index.html" class="btn-sair">
+        <span class="icone-menu">
+          <img src="imagens/sair-dash.png" alt="Sair" />
+        </span>
+        Sair
+      </a>
+    </aside>
+
+    <div class="overlay-menu"></div>
+
+    <main class="dashboard">
+      <header class="topbar reveal-up">
+        <button class="btn-abrir-menu" aria-label="Abrir menu">☰</button>
+
+        <div class="boas-vindas">
+          <h1 id="nome-usuario">Olá, seja bem-vindo!</h1>
+          <p>
+            Continue equilibrando sua alimentação e seus gastos calóricos hoje.
+          </p>
+        </div>
+
+        <div class="topbar-acoes">
+          <button class="btn-icone" aria-label="Notificações">
+            <img src="imagens/notificacao-dash.png" alt="Notificações" />
+          </button>
+
+          <button class="btn-perfil" aria-label="Perfil">
+            <img src="imagens/pessoa-cadastro.png" alt="Perfil" />
+          </button>
+        </div>
+      </header>
+
+      <section class="resumo-grid reveal-up delay-1">
+        <article class="card-resumo">
+          <span class="icone-resumo">
+            <img src="imagens/fogo-dash.png" alt="Gasto hoje" />
+          </span>
+
+          <div>
+            <p>Gasto hoje</p>
+            <h2>420 kcal</h2>
+            <span>Meta: 600 kcal</span>
+
+            <div class="barra-progresso">
+              <div class="progresso" style="width: 70%"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-resumo">
+          <span class="icone-resumo">
+            <img src="imagens/fogo-dash.png" alt="Consumido hoje" />
+          </span>
+
+          <div>
+            <p>Consumido hoje</p>
+            <h2>1.250 kcal</h2>
+            <span>Meta: 1.800 kcal</span>
+
+            <div class="barra-progresso">
+              <div class="progresso" style="width: 68%"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card-resumo">
+          <span class="icone-resumo">
+            <img src="imagens/balanca-de-justica-dash.png" alt="Saldo" />
+          </span>
+
+          <div>
+            <p>Saldo</p>
+            <h2>-830 kcal</h2>
+            <span>Déficit calórico</span>
+          </div>
+        </article>
+
+        <article class="card-resumo">
+          <span class="icone-resumo">
+            <img src="imagens/gesto-de-vitoria-dash.png" alt="Sequência" />
+          </span>
+
+          <div>
+            <p>Sequência</p>
+            <h2>3 dias</h2>
+            <span>Continue assim!</span>
+          </div>
+        </article>
+      </section>
+
+      <section class="card-principal reveal-up delay-2">
+        <div class="titulo-card">
+          <div>
+            <h2>Exemplos de gastos calóricos</h2>
+            <p>Estimativas para uma pessoa de aproximadamente 70kg.</p>
+          </div>
+        </div>
+
+        <div class="lista-gastos">
+          <div class="linha-gasto">
+            <div class="atividade-info">
+              <span class="icone-atividade">
+                <img src="imagens/caminhada-dash.png" alt="Caminhada" />
+              </span>
+              <strong>Caminhada leve</strong>
+            </div>
+
+            <strong class="kcal">150–200 kcal</strong>
+            <span class="tempo">30 min</span>
+          </div>
+
+          <div class="linha-gasto">
+            <div class="atividade-info">
+              <span class="icone-atividade">
+                <img src="imagens/corrida-dash.png" alt="Corrida" />
+              </span>
+              <strong>Corrida moderada</strong>
+            </div>
+
+            <strong class="kcal">300–400 kcal</strong>
+            <span class="tempo">30 min</span>
+          </div>
+
+          <div class="linha-gasto">
+            <div class="atividade-info">
+              <span class="icone-atividade">
+                <img src="imagens/ciclismo-dash.png" alt="Ciclismo" />
+              </span>
+              <strong>Ciclismo</strong>
+            </div>
+
+            <strong class="kcal">250–400 kcal</strong>
+            <span class="tempo">30 min</span>
+          </div>
+
+          <div class="linha-gasto">
+            <div class="atividade-info">
+              <span class="icone-atividade">
+                <img src="imagens/musculacao-dash.png" alt="Musculação" />
+              </span>
+              <strong>Musculação</strong>
+            </div>
+
+            <strong class="kcal">200–350 kcal</strong>
+            <span class="tempo">45 min</span>
+          </div>
+        </div>
+
+        <a href="#" class="link-card">Ver mais atividades →</a>
+      </section>
+
+      <section class="card-principal card-comparacao reveal-right delay-3">
+        <div class="titulo-card">
+          <div>
+            <h2>Você comeu, então mova-se!</h2>
+            <p>
+              Veja quantos minutos de exercício podem ajudar a gastar o que você
+              consumiu.
+            </p>
+          </div>
+        </div>
+
+        <div class="comparacao-lista">
+          <article class="linha-comparacao">
+            <div class="alimento">
+              <span class="imagem-alimento">
+                <img src="imagens/hamburguer-dash.png" alt="Hambúrguer" />
+              </span>
+
+              <div>
+                <h3>Hambúrguer</h3>
+                <p>1 unidade média</p>
+              </div>
+            </div>
+
+            <strong class="calorias-alimento">550 kcal</strong>
+
+            <div class="exercicios-equivalentes">
+              <div>
+                <p>Caminhada</p>
+                <strong>110 min</strong>
+              </div>
+              <div>
+                <p>Corrida</p>
+                <strong>55 min</strong>
+              </div>
+              <div>
+                <p>Ciclismo</p>
+                <strong>65 min</strong>
+              </div>
+              <div>
+                <p>Musculação</p>
+                <strong>80 min</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="linha-comparacao">
+            <div class="alimento">
+              <span class="imagem-alimento">
+                <img src="imagens/pizza-dash.png" alt="Pizza" />
+              </span>
+
+              <div>
+                <h3>Pizza</h3>
+                <p>1 fatia</p>
+              </div>
+            </div>
+
+            <strong class="calorias-alimento">350 kcal</strong>
+
+            <div class="exercicios-equivalentes">
+              <div>
+                <p>Caminhada</p>
+                <strong>70 min</strong>
+              </div>
+              <div>
+                <p>Corrida</p>
+                <strong>35 min</strong>
+              </div>
+              <div>
+                <p>Ciclismo</p>
+                <strong>40 min</strong>
+              </div>
+              <div>
+                <p>Musculação</p>
+                <strong>50 min</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="linha-comparacao">
+            <div class="alimento">
+              <span class="imagem-alimento">
+                <img src="imagens/brigadeiro-dash.png" alt="Brigadeiro" />
+              </span>
+
+              <div>
+                <h3>Brigadeiro</h3>
+                <p>1 unidade</p>
+              </div>
+            </div>
+
+            <strong class="calorias-alimento">130 kcal</strong>
+
+            <div class="exercicios-equivalentes">
+              <div>
+                <p>Caminhada</p>
+                <strong>25 min</strong>
+              </div>
+              <div>
+                <p>Corrida</p>
+                <strong>12 min</strong>
+              </div>
+              <div>
+                <p>Ciclismo</p>
+                <strong>15 min</strong>
+              </div>
+              <div>
+                <p>Musculação</p>
+                <strong>18 min</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="linha-comparacao">
+            <div class="alimento">
+              <span class="imagem-alimento">
+                <img src="imagens/vitamina-dash.png" alt="Vitamina" />
+              </span>
+
+              <div>
+                <h3>Vitamina de frutas</h3>
+                <p>300 ml</p>
+              </div>
+            </div>
+
+            <strong class="calorias-alimento">200 kcal</strong>
+
+            <div class="exercicios-equivalentes">
+              <div>
+                <p>Caminhada</p>
+                <strong>40 min</strong>
+              </div>
+              <div>
+                <p>Corrida</p>
+                <strong>20 min</strong>
+              </div>
+              <div>
+                <p>Ciclismo</p>
+                <strong>25 min</strong>
+              </div>
+              <div>
+                <p>Musculação</p>
+                <strong>30 min</strong>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <a href="#" class="link-card">Ver mais alimentos →</a>
+      </section>
+
+      <section class="dica-dia reveal-up delay-4">
+        <span class="icone-dica">
+          <img src="imagens/folha-dash.png" alt="Dica" />
+        </span>
+
+        <div>
+          <h3>Dica do dia</h3>
+          <p>
+            Pequenas escolhas todos os dias geram grandes mudanças com o tempo.
+          </p>
+        </div>
+
+        <button class="btn-favorito" aria-label="Favoritar dica">♡</button>
+      </section>
+    </main>
+
+    <script src="js/dashboard.js"></script>
+  </body>
+</html>

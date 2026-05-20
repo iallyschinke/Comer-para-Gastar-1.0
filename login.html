@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Cadastro | Comer para Gastar</title>
+    <link rel="icon" type="image/png" href="imagens/aba-leaf-monstera.png" />
+
+    <title>Entrar | Comer para Gastar</title>
 
     <link rel="icon" type="image/png" href="imagens/aba-leaf-monstera.png" />
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/cadastro.css" />
+    <link rel="stylesheet" href="css/login.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
@@ -38,32 +40,25 @@
             Cadastre-se
           </a>
 
-          <a href="login.html" class="btn-header btn-entrar"> Entrar </a>
+          <a href="login.html" class="btn-header btn-entrar">Entrar</a>
         </div>
       </div>
     </header>
 
-    <main class="cadastro-container">
-      <section class="cadastro-card">
+    <main class="login-container">
+      <section class="login-card">
         <div class="formulario-area scroll-reveal">
-          <h1><strong>Crie sua conta</strong></h1>
+          <h1><strong>Bem-vindo de volta!</strong></h1>
 
           <p>
             <span class="texto-verde">
-              Comece sua jornada para equilibrar a
-              <strong>alimentação</strong> e gasto <strong>calórico</strong>.
+              Entre na sua conta e continue equilibrando sua
+              <strong>alimentação</strong> e seu gasto
+              <strong>calórico</strong>.
             </span>
           </p>
 
-          <form class="form-cadastro">
-            <div class="campo">
-              <span class="icone">
-                <img src="imagens/pessoa-cadastro.png" alt="Usuário" />
-              </span>
-
-              <input type="text" placeholder="Nome completo" required />
-            </div>
-
+          <form class="form-login" action="dashboard.html">
             <div class="campo">
               <span class="icone">
                 <img src="imagens/email.png" alt="E-mail" />
@@ -93,32 +88,23 @@
               </button>
             </div>
 
-            <div class="campo campo-senha">
-              <span class="icone">
-                <img src="imagens/senha-cadastro.png" alt="Confirmar senha" />
-              </span>
+            <div class="opcoes-login">
+              <label class="lembrar-login">
+                <input type="checkbox" />
+                <span></span>
+                Lembrar de mim
+              </label>
 
-              <input
-                type="password"
-                placeholder="Confirmar senha"
-                class="input-senha"
-                required
-              />
-
-              <button
-                type="button"
-                class="btn-ver-senha"
-                aria-label="Mostrar senha"
-              >
-                <img src="imagens/olho-login.png" alt="" />
-              </button>
+              <a href="#" class="link-esqueceu">Esqueci minha senha</a>
             </div>
 
-            <button type="submit" class="btn-principal">Cadastrar</button>
+            <button type="submit" class="btn-principal">Entrar</button>
 
             <div class="separador">
               <span></span>
-              <p>ou cadastre-se com</p>
+
+              <p>ou entre pelo</p>
+
               <span></span>
             </div>
 
@@ -130,18 +116,18 @@
               Continuar com Google
             </button>
 
-            <p class="login-texto">
-              Já tem uma conta?
-              <a href="login.html">Entrar</a>
+            <p class="cadastro-texto">
+              Não tem uma conta?
+              <a href="cadastro.html">Cadastre-se</a>
             </p>
           </form>
         </div>
 
         <div class="imagem-area scroll-reveal delay-1">
           <img
-            src="imagens/cara-computador-cadastro.png"
+            src="imagens/entrar-logo.png"
             alt="Personagem usando computador"
-            class="imagem-cadastro"
+            class="imagem-login"
           />
         </div>
       </section>
@@ -193,6 +179,6 @@
       </section>
     </main>
 
-    <script src="js/cadastro.js"></script>
+    <script src="js/login.js"></script>
   </body>
 </html>
