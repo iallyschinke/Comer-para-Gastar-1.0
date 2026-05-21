@@ -513,3 +513,23 @@ body {
   height: 20px;
   object-fit: contain;
 }
+
+/* SOMBRA EXTERNA ESVERDEADA PARA CADASTRO E CARDS PRINCIPAIS */
+
+.cadastro-card,
+.formulario-area,
+.beneficios {
+  box-shadow:
+    0 6px 14px rgba(53, 139, 58, 0.08),
+    /* verde claro suave */ 0 12px 28px rgba(20, 102, 38, 0.06); /* verde escuro suave */
+
+  transition: box-shadow 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: box-shadow;
+}
+
+/* BLOCO INTERNO SEM SOMBRA */
+.formulario-area .campo,
+.beneficio,
+.beneficio span {
+  box-shadow: none !important;
+}
