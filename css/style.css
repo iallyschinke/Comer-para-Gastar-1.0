@@ -2017,10 +2017,6 @@ video {
     0 18px 45px rgba(53, 139, 58, 0.12),
     /* verde suave */ 0 6px 18px rgba(20, 102, 38, 0.08); /* verde escuro sutil */
 
-  transition:
-    transform 0.45s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.45s cubic-bezier(0.22, 1, 0.36, 1);
-
   will-change: transform;
 }
 
