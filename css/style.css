@@ -1752,7 +1752,30 @@ video {
   }
 
   .card-flutuante {
-    display: none;
+    display: flex;
+    position: absolute;
+    left: 14px;
+    right: 14px;
+    bottom: 14px;
+    min-height: auto;
+    padding: 12px 14px;
+    gap: 12px;
+    border-radius: 18px;
+    align-items: center;
+  }
+
+  .card-flutuante img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .card-flutuante h3 {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+
+  .card-flutuante p {
+    font-size: 12px;
   }
 
   .sobre,
